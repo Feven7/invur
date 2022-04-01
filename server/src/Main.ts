@@ -1,5 +1,4 @@
-import * as Discord from 'discord.js';
-import { Intents } from 'discord.js';
+import Discord, { Intents } from 'discord.js';
 import 'dotenv/config'
 import handleSlashCommand from './utils/SlashCommandHandler'
 

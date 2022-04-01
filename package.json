@@ -4,13 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "concurrently --kill-others \"cd nextjs-app/ && npm run build\"",
-    "dev": "concurrently --kill-others \"cd nextjs-app/ && npm run dev\" \"cd backend/ && npm start\" \"cd discord-app/ && npm start\"",
-    "start:prod": "concurrently --kill-others \"cd nextjs-app/ && npm run start\" \"cd backend/ && npm start\" \"cd discord-app/ && npm start\""
+    "build": "concurrently --kill-others \"cd client/ && npm run build\" \"cd server/ && npm run build\"",
+    "dev": "concurrently --kill-others \"cd client/ && npm run dev\" \"cd server/ && npm run dev\"",
+    "start:prod": "concurrently --kill-others \"cd client/ && npm run start\" \"cd server/ && npm start\""
   },
   "author": "",
-  "license": "Apache-2.0",
-  "dependencies": {
-    "@discordjs/rest": "^0.3.0"
-  }
+  "license": "Apache-2.0"
 }

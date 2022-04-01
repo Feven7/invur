@@ -7,9 +7,10 @@ Creates a hCaptcha Discord Invite url
 
 ## Setup Dotenv  
 
-### backend/.env
+### server/.env
 
 ```
+TOKEN=
 SESSION_SECRET=
 DB_HOST=
 DB_PASS=
@@ -21,24 +22,20 @@ HCAPTCHA=
 PORT=
 ```
 
-### discord-app/.env
-
-```
-TOKEN=
-BACKEND_URL=
-```
-
 ## Start
 
 ### Productive
 
 ```
+
  npm run build
  npm run start:prod
+
 ```
 
 ### Development
 
 ```
+
 npm run dev
 ```
